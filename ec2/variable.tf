@@ -53,3 +53,9 @@ variable "instance_tags" {
   }
 }
 
+variable "iam_role" {
+  description = "IAM role name"
+  type        = string
+ 
+}
+

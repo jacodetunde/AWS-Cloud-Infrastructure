@@ -1,14 +1,19 @@
 variable "role_name" {
-  type    = string
-  default = ""
+  description = "Name of the IAM role"
+  type        = string
 }
 
 variable "assume_role_policy" {
-  type    = string
-  default = ""
+  description = "Assume role policy document"
+  type        = string
 }
 
 variable "policy_arns" {
-  type    = list(string)
-  default = []
+  description = "List of policy ARNs to attach"
+  type        = list(string)
+}
+
+variable "profile_name" {
+  description = "Name of the IAM instance profile"
+  type        = string
 }
