@@ -1,9 +1,10 @@
-variable "user_name" {
-  type    = string
-  default = ""
+variable "users" {
+  type        = list(string)
+  description = "List of IAM user names"
 }
 
 variable "policies" {
-  type    = list(string)
-  default = []
+  type        = list(string)
+  description = "List of IAM policy ARNs"
 }
+
